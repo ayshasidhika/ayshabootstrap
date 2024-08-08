@@ -1,0 +1,66 @@
+
+.row{
+    margin: 1.5rem 1.5rem;
+    
+        --bs-gutter-x: 1.5rem!important;
+        --bs-gutter-y: 1.5rem!important;
+        display: flex;
+        flex-wrap: wrap;
+     
+}
+.parallax {
+    /* The image used */
+    background-image: url("https://images.pexels.com/photos/3691225/pexels-photo-3691225.jpeg");
+    
+    /* Full height */
+    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+  }
+  .gallery-item {
+    overflow: hidden;
+}
+
+.gallery-item img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+.gallery-item {
+overflow: hidden;
+position: relative;
+cursor: pointer;
+}
+.gallery-item img {
+transition: transform 0.3s ease-out;
+}
+.gallery-item:hover img {
+transform: scale(1.1);
+}
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 1.5rem;
+}
+.overlay {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background: rgba(0, 0, 0, 0.5);
+color: white;
+font-size: 1.5rem;
+display: flex;
+justify-content: center;
+align-items: center;
+opacity: 0;
+transition: opacity 0.3s ease-out;
+}
+.gallery-item:hover .overlay {
+opacity: 1;
+}
